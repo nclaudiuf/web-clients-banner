@@ -1,0 +1,81 @@
+@import './theme.scss';
+
+body {
+	background-color: rgb(255, 255, 255, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(251, 252, 253, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	) !important;
+}
+
+h5 {
+	color: var(--secondary-light) !important;
+}
+h1 {
+	color: var(--secondary) !important;
+}
+
+.bg-light {
+	background-color: #fafafa !important;
+}
+
+.hide-lg,
+.hide-md,
+.hide-sm {
+	display: inherit;
+}
+@media only screen and (max-width: 992px) {
+	.hide-lg {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.hide-md {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.hide-sm {
+		display: none !important;
+	}
+}
+
+.hover-effect,
+.hover-effect:hover {
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+a.hover-effect:hover,
+img.hover-effect:hover {
+	opacity: 0.6;
+}
+
+.badge {
+	font-size: 80%;
+	font-weight: 700;
+}
+
+/* Client Section */
+.s-clients ul li img {
+	opacity: 0.8;
+	max-width: 120px !important;
+	max-height: 32px !important;
+}
+.s-clients ul li {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-banner {
+	margin-top: 6rem;
+}
+
+@media only screen and (max-width: 576px) {
+	.text-banner {
+		margin-top: 4rem;
+	}
+}
